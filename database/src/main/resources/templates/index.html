@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="C:\Users\aleksander\Desktop\JAVA Projects\companyDatabase\CompanyDatabase\database\src\main\resources\static\style.css"/>
+        <link rel="stylesheet" href="/src/main/resources/static/style.css/"/>
 
-    <title>The MARS Company</title>
-</head>
-<body>
+        <title>The MARS Company</title>
+    </head>
+    <body>
 
-<h1>The MARS Company - We are building Your future</h1>
+        <section class="section-part1">
+            <div class="part1">
+                <div class="part1-text-box">
+                    <h1 class="heading-no1">
+                        The MARS Company - We are building Your future
+                    </h1>
+                    <p class="part1-description">
+                        Our company is taking care of building Your future on MARS
+                        by building new pipelines, new power plants, new databases and much more!
+                    </p>
+                    <button class="button-no1" th:href="@{/}">UPDATE IN WORK</button>
+                    <button class="button-no2" th:href="@{/}">UPDATE IN WORK</button>
+                </div>
+            </div>
 
-</body>
+        </section>
+
+    </body>
 </html>

@@ -1,4 +1,7 @@
-
+html {
+  /*font-size: 10px;*/
+  font-size: 62.5%;
+}
 
 * {
   padding: 0;
@@ -11,4 +14,37 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+}
+
+/*.test {
+  width: 1000px;
+  background-color: red;
+  padding: 100px;
+  max-width: 1000px;
+  max-width: 50rem;
+  color: #fff;
+  font-size: 2rem;
+}*/
+
+.part1 {
+  max-width: 100%;
+  display: grid;
+  /*grid-template-columns: 1fr 1fr;*/
+  margin: 0 auto;
+  align-items: center;
+  background-color: peachpuff;
+}
+
+.heading-no1 {
+  font-size: 6rem;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 4rem;
+}
+
+.part1-description {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
 }
