@@ -1,12 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Company Home Page</title>
+    <title>The D Company</title>
 </head>
 <body>
-
-  <h2>Welcome in our Company Home Page</h2>
-
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+<!--            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">-->
+<!--                <span class="icon-bar"></span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--                <span class="icon-bar"></span>-->
+<!--            </button>-->
+            <a class="navbar-brand" th:href="@{/}">The D Company</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a th:href="@{/}">List of Employees</a>
+                </li>
+                <li>
+                    <a th:href="@{/}">List of Projects</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a th:href="@{/}">
+                        <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>Sign in
+                    </a>
+                </li>
+                <li>
+                    <a th:href="@{/}">
+                        <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>Logout
+                    </a>
+                    <form style="visibility: hidden" id="form" method="post" action="#" th:action="@{/}"></form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 </body>
 </html>
