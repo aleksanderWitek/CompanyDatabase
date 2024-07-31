@@ -14,6 +14,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  background-color: rgb(223, 204, 180);
 }
 
 /*.test {
@@ -26,13 +27,67 @@ body {
   font-size: 2rem;
 }*/
 
+/***************/
+/* GENERAL REUSABLE COMPONENTS*/
+/***************/
+
+/***************/
+/* HEADER SECTION*/
+/***************/
+.header {
+  background-color:peru;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem;
+  padding-top: 0.5rem;
+  display: flex;
+  border-width: 2rem;
+  border: #8B4000;
+}
+
+.main-nav {
+  margin-bottom: 1rem;
+}
+
+.header-buttons {
+  text-align: right;
+}
+
+.button-no1, .button-no2, .button-no3 {
+  background-color: chocolate;
+  border-color: #8B4000 ;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.15rem 0.3rem;
+  border-radius: 0.2rem;
+  transition: background-color 1s;
+
+}
+
+.button-no1:hover,
+.button-no1:active,
+.button-no2:hover,
+.button-no2:active
+.button-no3:hover,
+.button-no3:active{
+  cursor: pointer;
+  background-color:#CC5500;
+}
+
+/***************/
+/* PART1 SECTION*/
+/***************/
+.section-part1 {
+  padding: 9rem;
+  padding-top: 4rem;
+}
+
 .part1 {
   max-width: 100%;
   display: grid;
   /*grid-template-columns: 1fr 1fr;*/
   margin: 0 auto;
   align-items: center;
-  background-color: peachpuff;
 }
 
 .heading-no1 {
@@ -46,5 +101,5 @@ body {
 .part1-description {
   font-size: 2rem;
   line-height: 1.2;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
