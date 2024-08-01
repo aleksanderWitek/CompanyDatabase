@@ -36,24 +36,25 @@ body {
 /***************/
 .header {
   background-color:peru;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 500;
   padding: 1rem;
   padding-top: 0.5rem;
   display: flex;
-  border-width: 2rem;
-  border: #8B4000;
+  border-bottom: 1rem solid #4c2905;
 }
 
 .main-nav {
-  margin-bottom: 1rem;
+  padding-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .header-buttons {
   text-align: right;
+  padding-top: 1rem;
 }
 
-.button-no1, .button-no2, .button-no3 {
+.button {
   background-color: chocolate;
   border-color: #8B4000 ;
   font-size: 1rem;
@@ -61,17 +62,13 @@ body {
   padding: 0.15rem 0.3rem;
   border-radius: 0.2rem;
   transition: background-color 1s;
-
+  margin-right: 1rem;
 }
 
-.button-no1:hover,
-.button-no1:active,
-.button-no2:hover,
-.button-no2:active
-.button-no3:hover,
-.button-no3:active{
+.button:hover,
+.button:active{
   cursor: pointer;
-  background-color:#CC5500;
+  background-color:#441c00;
 }
 
 /***************/
