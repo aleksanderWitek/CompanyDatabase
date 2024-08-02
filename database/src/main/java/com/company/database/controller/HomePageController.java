@@ -8,6 +8,11 @@ public class HomePageController {
 
     @GetMapping("/")
     public String showHome(){
-        return "index";
+        return "home";
+    }
+
+    @GetMapping("/signInForm")
+    public String signInForm(){
+        return "signIn";
     }
 }

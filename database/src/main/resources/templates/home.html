@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/src/main/resources/static/home-style.css/"/>
+    <link rel="stylesheet" href="/src/main/resources/static.css/home-style.css"/>
 
     <title>The MARS Company</title>
 </head>
 <body>
 <header class="header">
-    <nav class="main-nav">
-        The MARS Company
-    </nav>
-    <div class="header-buttons" style="position:absolute; left:79%;">
+    <div class="header-companyName-Logo">
+        <nav class="main-nav">
+            The MARS Company
+        </nav>
+        <img class="logo" alt="The Mars Company Logo" src="/src/main/resources/img/marsPlanet.png"/>
+    </div>
+    <div class="header-buttons" style="position:absolute; left:78%;">
         <button class="button" th:href="@{/}">Home</button>
-        <button class="button" th:href="@{/}">Sign In</button>
+        <button class="button" th:href="@{/signInForm}">Sign In</button>
         <button class="button" th:href="@{/}">Logout</button>
         <button class="button" th:href="@{/}">Career</button>
         <button class="button" th:href="@{/employeeInfo}">Employee Info</button>
@@ -29,9 +32,22 @@
                 The MARS Company - We are building Your future
             </h1>
             <p class="part1-description">
-                Our company is taking care of building Your future on MARS
-                by building new pipelines, new power plants, new databases and much more!
+                The point to be made is that unlike colonists on any known extraterrestrial body,
+                Martian colonists will be able to live on the surface, not in tunnels,
+                and move about freely and grow crops in the light of day.
+                Mars is a place where humans can live and multiply to large numbers,
+                supporting themselves with products of every description made out of indigenous materials.
+                Mars is thus a place where an actual civilization, not just a mining or scientific outpost, can be developed.
+                And significantly for interplanetary commerce, Mars and Earth are the only two locations in the solar system
+                where humans will be able to grow crops for export.
+                Our company is taking care of building Your future on MARS!
+                We are building new homes and new work places on MARS for You!
             </p>
+        </div>
+        <div class="part1-mars-images">
+            <img class="image1" alt="The Mars Company Logo" src="/src/main/resources/img/marsView1.png" style="position:relative; center;"/>
+            <img class="image2" alt="The Mars Company Logo" src="/src/main/resources/img/marsView2.png" style="position:relative; left:30%;"/>
+            <img class="image3" alt="The Mars Company Logo" src="/src/main/resources/img/marsView3.png" style="position:relative; center;"/>
         </div>
     </div>
 </section>

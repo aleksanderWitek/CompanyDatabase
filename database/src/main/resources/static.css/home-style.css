@@ -44,9 +44,18 @@ body {
   border-bottom: 1rem solid #4c2905;
 }
 
+.header-companyName-Logo {
+  display: inline-flex;
+}
+
 .main-nav {
   padding-top: 1rem;
   margin-bottom: 0.5rem;
+}
+
+.logo {
+  height: 5rem;
+  padding: 1rem 1rem;
 }
 
 .header-buttons {
@@ -57,7 +66,7 @@ body {
 .button {
   background-color: chocolate;
   border-color: #8B4000 ;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: #fff;
   padding: 0.15rem 0.3rem;
   border-radius: 0.2rem;
@@ -80,15 +89,15 @@ body {
 }
 
 .part1 {
-  max-width: 100%;
+  max-width: 70%;
   display: grid;
-  /*grid-template-columns: 1fr 1fr;*/
+  grid-template-columns: 1fr 1fr;
   margin: 0 auto;
-  align-items: center;
 }
 
 .heading-no1 {
-  font-size: 6rem;
+  text-align: center;
+  font-size: 7rem;
   font-weight: 500;
   color: #333;
   letter-spacing: -0.5px;
@@ -96,7 +105,17 @@ body {
 }
 
 .part1-description {
-  font-size: 2rem;
+  font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 1rem;
 }
+
+.image1, .image2, .image3 {
+  width: 100%;
+  border-radius: 25%;
+}
+
+.image2, .image3 {
+  margin-top: -5rem;
+}
+
