@@ -40,8 +40,10 @@ body {
   font-weight: 500;
   padding: 1rem;
   padding-top: 0.5rem;
+  padding-right: 2rem;
   display: flex;
   border-bottom: 1rem solid #4c2905;
+  justify-content: space-between;
 }
 
 .header-companyName-Logo {
@@ -58,6 +60,57 @@ body {
   padding: 1rem 1rem;
 }
 
+/* Dropdown Button */
+.dropbtn {
+  background-color: chocolate;
+  border-color: #8B4000 ;
+  font-size: 1.5rem;
+  padding: 0.15rem 0.3rem;
+  border-radius: 0.2rem;
+  transition: background-color 1s;
+  margin-right: 1rem;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  padding-top: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  background-color:chocolate;
+  min-width: 8rem;
+  font-size: 2rem;
+  font-family: sans-serif;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: block;
+  font-size: 2rem;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #8B4000;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  cursor: pointer;
+  background-color:#441c00;
+}
+
+
 .header-buttons {
   text-align: right;
   padding-top: 1rem;
@@ -67,7 +120,6 @@ body {
   background-color: chocolate;
   border-color: #8B4000 ;
   font-size: 1.5rem;
-  color: #fff;
   padding: 0.15rem 0.3rem;
   border-radius: 0.2rem;
   transition: background-color 1s;

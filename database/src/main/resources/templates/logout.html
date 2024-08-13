@@ -1,14 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/src/main/resources/static.css/logout-style.css"/>
+  <link rel="stylesheet" href="/src/main/resources/static.css/home-style.css"/>
 
-    <title>The MARS Company</title>
+  <title>The MARS Company</title>
 </head>
+
 <body>
+
+  <header class="header">
+    <div class="header-companyName-Logo">
+      <nav class="main-nav">
+        The MARS Company
+      </nav>
+      <img class="logo" alt="The Mars Company Logo" src="/src/main/resources/img/marsPlanet.png"/>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">The Mars Company</button>
+      <div class="dropdown-content">
+        <a th:href="@{/}">Home</a>
+        <a th:href="@{/signInForm}">Sign In</a>
+        <a th:href="@{/logout}">Logout</a>
+        <a th:href="@{/career}">Career</a>
+        <a th:href="@{/employeeInfo}">Employee Info</a>
+      </div>
+    </div>
+  </header>
 
 </body>
 </html>

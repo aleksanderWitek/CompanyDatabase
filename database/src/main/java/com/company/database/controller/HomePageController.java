@@ -12,7 +12,22 @@ public class HomePageController {
     }
 
     @GetMapping("/signInForm")
-    public String signInForm(){
-        return "signIn";
+    public String signInForm() {
+        return "sign-in-form";
+    }
+
+    @GetMapping("/logout")
+    public String logout() {
+        return "logout";
+    }
+
+    @GetMapping("/career")
+    public String career() {
+        return "career";
+    }
+
+    @GetMapping("/employeeInfo")
+    public String employeeInfo() {
+        return "employee-info";
     }
 }
