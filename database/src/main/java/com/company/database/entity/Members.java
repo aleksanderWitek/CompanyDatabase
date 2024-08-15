@@ -1,6 +1,8 @@
 package com.company.database.entity;
 
+import jakarta.annotation.Nonnull;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "members")
@@ -8,15 +10,17 @@ public class Members {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Nonnull
     @Column(name = "id")
     private int id;
-
+    @Nonnull
     @Column(name = "pw")
     private String password;
-
+    @Nonnull
     @Column(name = "active")
     private int isActive;
 
+    @NotNull(message = "something went wrong with getting info from Employees table")
     @OneToOne(mappedBy = "members",
               cascade = CascadeType.ALL)
     private Employees employees;
